@@ -21,6 +21,8 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  # where is folder?
+  ls -l
   # Build job
   build:
     runs-on: ubuntu-latest
