@@ -26,7 +26,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: show output
-        run: ls .. -R
+        run: ls -R
+      - name: show folder
+        run: ls /github/* -R
       - name: Checkout
         uses: actions/checkout@v3
       - name: Setup Pages
