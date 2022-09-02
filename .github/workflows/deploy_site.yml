@@ -28,7 +28,7 @@ jobs:
       - name: show output
         run: ls -R
       - name: show folder
-        run: ls /github/* -R
+        run: ls /home/runner/work/public/public -R
       - name: Checkout
         uses: actions/checkout@v3
       - name: Setup Pages
@@ -36,7 +36,7 @@ jobs:
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source: public/public/site
+          source: /home/runner/work/public/public/site
           destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
